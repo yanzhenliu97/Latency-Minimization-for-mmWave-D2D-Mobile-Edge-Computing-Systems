@@ -1,6 +1,7 @@
 function [proposed_rate,heuristic_rate,Wa] = pcccp(Nrfa,Na,N,Nrf,P,Pmax,sigma,Fa,U,H)
 
 %%tunning part ================
+
 % N = 64  %BS attenna number
 % Nrf = 6  %BS RF chain number
 % Na = 8  %user A attenna number
@@ -21,6 +22,10 @@ function [proposed_rate,heuristic_rate,Wa] = pcccp(Nrfa,Na,N,Nrf,P,Pmax,sigma,Fa
 % tau = 1e-3;
 % tts_tau = tau*(Nrf*Nrfa)/(N*Na);
 % [H,H_tau,H_tau_tts,Ar,At] = mmWavechannel(N,Na,L,dist1,AoA1,tau,tts_tau,scale_factor);
+
+%%tuning part over ==================================
+
+
 
 %% short term variables initialization
 D = min(Nrfa,Nrf); %send data number
@@ -109,8 +114,9 @@ for outer_i =1:outer_max
     
 end
 proposed_rate = rate(outer_i);
-%disp('proposed rate + receiver is')
-%compute_rate1(H,U,Fa,Wa,V,sigma)
+
+%tuning part ========================================
+
 %% plot figure
 % figure()
 % plot(real(rate(1:outer_i)),'r','linewidth',2)
@@ -128,6 +134,7 @@ proposed_rate = rate(outer_i);
 % set(get(gca,'YLabel'),'Fontsize',12)
 % grid on
 
+%%tuning part over===========================================
 
         
         

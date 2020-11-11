@@ -18,10 +18,12 @@ function [proposed_rate,heuristic_rate,Wa] = pcccp(Nrfa,Na,N,Nrf,P,Pmax,sigma,Fa
 % U = exp(1j*Theta_U1);
 % dist1 = 50;
 % AoA1 = 0.1;
-% scale_factor = sqrt(10^11);
+% scale_factor = sqrt(10^12);
 % tau = 1e-3;
 % tts_tau = tau*(Nrf*Nrfa)/(N*Na);
-% [H,H_tau,H_tau_tts,Ar,At] = mmWavechannel(N,Na,L,dist1,AoA1,tau,tts_tau,scale_factor);
+% belta1=2.4
+% load('nlos_angle1.mat')
+% mmWavechannel(N,Na,nlos_AOA1,nlos_AOD1,dist1,belta1,AoA1,tau,tts_tau,scale_factor);
 
 %%tuning part over ==================================
 

@@ -1,7 +1,7 @@
 Simulation code for paper  Latency-Minimization-for-mmWave-D2D-Mobile-Edge-Computing-Systems: Joint-Task-Allocation-And-
 hybrif-beamforming
 
-Simulation code for the original manuscript is in original
+Simulation code for the original manuscript is in pcccp_twc
 
 The Algorithm 1 is included in main.m and you can directly run it.
 

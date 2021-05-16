@@ -30,7 +30,7 @@ function [proposed_rate,heuristic_rate,Wa] = pcccp(Nrfa,Na,N,Nrf,P,Pmax,sigma,Fa
 
 
 %% short term variables initialization
-D = min(Nrfa,Nrf); %send data number
+D = min(Nrfa,Nrf); %number of data size
 if 4*Pmax/pi*Na<=P
     P = 4*Pmax/pi*Na;
 end

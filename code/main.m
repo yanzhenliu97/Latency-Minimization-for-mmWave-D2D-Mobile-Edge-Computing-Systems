@@ -116,6 +116,7 @@ w3 = -(1-initial_rho)*alpha/(initial_rho+alpha);
 % Theta_U2 = angle(U2);
 % Theta_Fb = angle(Fb);
 
+%orocess start 
 for t = 1:Tf
 %% short-term optimization
 t
